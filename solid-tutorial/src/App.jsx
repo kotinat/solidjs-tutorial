@@ -1,10 +1,10 @@
-import { BookList } from "./Booklist";
+import { BookList } from "./BookList";
 import { AddBook } from "./AddBook";
 
-function Bookshelf() {
+function Bookshelf(props) {
   return (
     <div>
-      <h1>My Bookshelf</h1>
+      <h1>{props.name}'s Bookshelf</h1>
       <BookList />
       <AddBook />
     </div>
@@ -12,7 +12,7 @@ function Bookshelf() {
 }
 function App() {
   return (
-    <Bookshelf/>
+    <Bookshelf name='solid'/>
   );
 }
 export default App;
