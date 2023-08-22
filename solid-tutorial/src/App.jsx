@@ -8,11 +8,9 @@ function Bookshelf(props) {
       <BookList />
       <AddBook />
     </div>
-  )
+  );
 }
 function App() {
-  return (
-    <Bookshelf name='solid'/>
-  );
+  return <Bookshelf name="solid" />;
 }
 export default App;
