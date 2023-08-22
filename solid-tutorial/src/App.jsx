@@ -15,7 +15,7 @@ function Bookshelf(props) {
     <div>
       <h1>{props.name}'s Bookshelf</h1>
       <BookList books={books()} />
-      <AddBook />
+      <AddBook setBooks={setBooks} />
     </div>
   );
 }

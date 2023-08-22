@@ -10,7 +10,7 @@ export function BookList(props) {
           {(book) => {
             return (
               <li>
-                {book.title}{" "}
+                {book.title}
                 <span style={{ "font-style": "italic" }}>({book.author})</span>
               </li>
             );
