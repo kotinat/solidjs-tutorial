@@ -7,6 +7,7 @@ const initialBooks = [
 ];
 export function BookList() {
   const [books, setBooks] = createSignal(initialBooks);
+  const totalBooks = () => books().length;
   return (
     <ul>
       <For each={books()}>
